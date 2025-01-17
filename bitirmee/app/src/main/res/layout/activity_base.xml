@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="@color/black">
+
+        <Button
+            android:id="@+id/btnTumHisseler"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kategoriler"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_backgroundnew"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnProfil"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_backgroundnew"
+            android:text="Çıkış yap"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnTakipListesi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Haberler"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_backgroundnew"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</LinearLayout>

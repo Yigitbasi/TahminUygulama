@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Hoş geldiniz.\n lütfen e-posta ve şifrenizi giriniz."
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+<com.google.android.material.textfield.TextInputLayout
+android:id="@+id/emailInputLayout"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="E-posta"
+app:hintTextColor="@color/white">
+
+
+<com.google.android.material.textfield.TextInputEditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textEmailAddress"
+    android:background="@color/white"
+    android:textColor="@color/black" />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+android:id="@+id/passwordInputLayout"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="8dp"
+android:hint="Şifre"
+app:hintTextColor="@color/black"
+    app:passwordToggleEnabled="true"
+    app:passwordToggleTint="@color/black">
+
+<com.google.android.material.textfield.TextInputEditText
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:inputType="textPassword"
+    android:background="@color/white"
+    android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+<Button
+android:id="@+id/loginButton"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:backgroundTint="@color/red"
+    android:text="Giriş Yap"
+    android:textColor="@color/white" />
+
+
+<TextView
+android:id="@+id/switchToSignup"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="8dp"
+android:text="Hesabınız yok mu? Kayıt olun."
+android:textColor="@color/white" />
+
+<Button
+android:id="@+id/signupButton"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:backgroundTint="@color/red"
+    android:text="Kayıt Ol"
+    android:textColor="@color/white"
+    android:visibility="visible" />
+
+    <Button
+        android:id="@+id/googleLoginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Google ile Giriş Yap"
+        android:backgroundTint="@color/red"
+        />
+
+    <Button
+    android:id="@+id/forgotPasswordButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:backgroundTint="@color/black"
+    android:text="Şifremi Unuttum"
+    android:textColor="@color/white"
+    android:layout_marginBottom="16dp"/>
+
+</LinearLayout>
